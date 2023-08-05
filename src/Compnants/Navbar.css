@@ -1,0 +1,173 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: cadetblue;
+    padding: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    }
+  
+  .logo img {
+    height: 40px;
+    width: auto;
+  }
+  
+  .navbar-right ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar-right li {
+    margin: 0 10px;
+  }
+  
+  .navbar-right a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  /* Style for the search box */
+  .search-box {
+    display: flex;
+    align-items: center;
+  }
+  
+  .search-box input[type="text"] {
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  .search-box .filter-box button {
+    padding: 5px 10px;
+    background-color: #666;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .filter-box input[type="text"] {
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  /* Media Query for responsiveness */
+  @media screen and (max-width: 768px) {
+    nav {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .navbar-right {
+      margin-top: 10px;
+    }
+  
+    .search-box {
+      margin-top: 10px;
+    }
+  
+    .navbar-right ul {
+      flex-direction: column;
+      align-items: flex-end;
+    }
+  
+    .navbar-right li {
+      margin: 5px 0;
+    }
+  }
+  
+  img {
+    width: 29px;
+      height: 23px;
+  }
+
+  /* Base styles for the button */
+ button {
+  display: inline-block;
+    padding: 13px 13px;
+    font-size: 12px;
+    font-weight: 300;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+
+}
+
+/* Gradient background for the button */
+button {
+  background-image: linear-gradient(to right, #667eea, #764ba2);
+}
+
+/* Add box shadow on hover to create a 3D effect */
+ button:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Slightly change the background on click */
+.button:active {
+  transform: translateY(2px);
+}
+
+/* Add a smooth transition to the text color */
+button span {
+  transition: color 0.3s ease;
+}
+
+/* Change text color on hover */
+button:hover span {
+  color: #667eea;
+}
+
+/* Hide the default arrow icon in most modern browsers */
+select {
+  background-color: #f2f2f2;
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 5px 6px;
+  font-family: Arial, sans-serif;
+  color: #333;
+  border-radius: 15px;
+}
+
+/* Style the arrow icon */
+select::after {
+  content: '\25BC'; /* Unicode character for down arrow ▼ */
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  font-size: 14px;
+  color: #555;
+  pointer-events: none; /* Ensure the arrow doesn't block clicks on the dropdown */
+}
+
+/* Style the option elements */
+select option {
+  /* Set a custom background color for the dropdown options */
+  background-color: #f2f2f2;
+  /* Define a custom font and text color for the options */
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+/* Style the dropdown when it's open */
+select:focus {
+  outline: none; /* Remove the default focus outline */
+  box-shadow: 0 0 5px #007bff; /* Add a blue shadow when focused */
+  border-color: #007bff; /* Change the border color when focused */
+}
+.profileicon{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+

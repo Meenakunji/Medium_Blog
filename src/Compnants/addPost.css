@@ -1,0 +1,52 @@
+.addPost{
+    background: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height:100vh;
+}
+.addPost__container{
+    border: 1px solid lightgray;
+    background: white;
+    padding: 20px;
+    min-width: 350px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+
+}
+.addPost_create{
+    margin-bottom: 15px;
+    align-self: center;
+}
+.addPost__label{
+    margin-left: 2px;
+    margin-bottom: 2px;
+    font-size: 14px;
+
+}
+.addPost__container > button {
+    width: 100%;
+    margin: 10px 0;
+    border-radius: 4px;
+    padding: 5px;
+    background-color: #f2b124;
+    border: transparent;
+}
+.addPost__container > button:hover{
+    background: #ecb939;
+    color: rgb(85, 62, 20);
+}
+.addPost_container > input, .addPost_container > textarea {
+    margin-bottom: 15px;
+    width: 94%;
+    background: rgb(232, 240, 254);
+    border-radius: 4px;
+    height: 30px;
+    padding: 10px;
+    offset: none;
+    border: transparent;
+}
+.inputTextArea{
+    min-height: 50px;
+}
