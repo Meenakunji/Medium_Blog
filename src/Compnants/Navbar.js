@@ -90,4 +90,4 @@ const Navbar = ({setData}) => {
   );
 };
 
-export default Navbar;
+export default Navbar;

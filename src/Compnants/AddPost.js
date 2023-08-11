@@ -31,13 +31,13 @@ const AddPost = () => {
     <div className="addPost">
       <div className="addPost__container">
         <h2 className='addPost_create'>Add a New Post</h2>
-        <div className='addPost__label'>Title</div>
+        <div className='addPost__label'><h3>Title</h3></div>
         <input type="text"  name='title' value={formData.title} onChange={handleChange} />
-        <div className='addPost__label'>Body</div>
+        <div className='addPost__label'><h3>Body</h3></div>
         <textarea type='textarea' row = "3" className='inputTextArea'  name='body' value={formData.body} onChange={handleChange} />
-        <div className='addPost__label'>Tags</div>
+        <div className='addPost__label'><h3>Tags</h3></div>
         <input type="text"  name='tags' value={formData.tags} onChange={handleChange} />
-        <div className='addPost__label'>Image Link</div>
+        <div className='addPost__label'><h3> imageLink</h3></div>
         <input type="text"  name='imageLink' value={formData.imageLink} onChange={handleChange} />
         <button onClick={handleCreate}>{state && state.type === 'edit' ? 'Modify Post' : 'Add Post'}</button>
 
@@ -46,4 +46,4 @@ const AddPost = () => {
   )
 }
 
-export default AddPost;
+export default AddPost;

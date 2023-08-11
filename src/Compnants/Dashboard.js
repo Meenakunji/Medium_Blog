@@ -38,5 +38,5 @@ export default function Dashboard({data, setData }) {
     </div>: null}
     
     <div className = "cardbox">{arr}</div>
-  </div>);
+ </div>);
 }

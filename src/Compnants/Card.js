@@ -44,31 +44,39 @@ export default function Card({item, currentUser}) {
   return (
     <div className = "card">
         <div className="card-header">
-        <p>{item.title}</p>
+        <p className='para'>{item.author}</p>
+        <p>{formatDateToSimpleDate(item.dateModified)}</p>
         </div>
         <div className="card-content">
-        <p className='card_body'>{item.body}</p>
+          <div className='card-contentbox'>
+            <h3>{item.title}</h3>
+            <p className='card_body'>{item.body}</p>
+          </div>
+        
         <img src= {item.imageLink} alt='Not available '/>
-        <p><span>Tags</span>: {item.tags} </p>
+        
         </div>
         <div className="card-footer">
-        <p><span>Author</span>: {item.author}</p>
+        <p><span>Tags</span>: {item.tags} </p>
+        <p><span>Reading time</span>: {item.reading_time}</p>
+        <p><span>Save</span></p>
+        {/* <p><span>Author</span>: {item.author}</p> */}
         <p><span>like</span>: {currentPostLikes.length}</p>
         </div>
         <div className="card-footer">
-        <p><span>Date</span>: {formatDateToSimpleDate(item.dateModified)}</p>
-        <p><span>Reading time</span>: {item.reading_time}</p>
+        {/* <p><span>Date</span>: {formatDateToSimpleDate(item.dateModified)}</p> */}
+        
         </div>
         <div className="card-footer">
         {currentUser.email ? <button onClick={handleLike}>{currentPostLikes.includes(currentUser.email) ? 'Liked': 'Like'}</button>: null}
         {
           item.author && currentUser.email &&  item.author === currentUser.email ? <>
-          <button onClick={handleEdit}>Edit</button>
-          <button onClick={handleDelete}>Delete</button>
+          <p onClick={handleEdit}><img src= {"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_I9caPBAuNr4GF81_FW4vFJHHP3TsTEsI-tylqrXBdw&s"} alt='Not available '/></p>
+          <p onClick={handleDelete}><img src= {"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeXQg4iHSGd2nkOK7SFxFIZtDXNPxny7yNd_uFjlQ&s"} alt='Not available '/></p>
           </>: null
         }
         </div>
     </div>
-   
-  )
+
+ )
 }
